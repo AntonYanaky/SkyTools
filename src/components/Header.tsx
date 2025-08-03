@@ -9,7 +9,7 @@ export default function Header() {
   return (
     <header className="font-poppins flex items-center py-6 select-none">
       <NavLink className="flex items-center flex-1" to="/">
-        <img src="/logo.svg" alt="Logo" className="w-12 h-12" />
+        <img src="logo.svg" alt="Logo" className="w-12 h-12" />
         <p className="ml-2 text-xl">SkyTools</p>
       </NavLink>
       <NavLink
