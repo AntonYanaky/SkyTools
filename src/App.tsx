@@ -5,7 +5,7 @@ import BitsMain from './pages/BitsMain.tsx';
 export default function App() {
 
   return (
-    <BrowserRouter basename="/SkyTools/" >
+    <BrowserRouter basename="/SkyTools" >
       <Route path="/" element={<Home />} />
       <Route path="/bits" element={<BitsMain />} />
     </BrowserRouter>
