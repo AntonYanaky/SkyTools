@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import Items from '../classes/item';
-import type { ProcessedBazaarProduct, ProcessedBazaarData} from '../classes/item';
+import type { ProcessedBazaarData} from '../classes/item';
 import { getAuctionsData } from '../api/auction.ts';
 import { getBazaarData } from '../api/bazaar.ts';
 
@@ -536,7 +536,9 @@ export default function ForgeData() {
     const [auctionsData, setAuctionsData] = useState<Map<string, number>>(new Map());
     const [bazaarData, setBazaarData] = useState<ProcessedBazaarData>({});
     const [isLoading, setIsLoading] = useState<boolean>(true);
-    const [bazaarTaxRate, setTaxRate] = useState<number>(0.0125); //my own value, this depends on account
+    const [bazaarTaxRate, setTaxRate] = useState<number>(0.015); //my own value, this depends on account
+
+    setTaxRate(0.0125);
 
     const formatNumber = (num: number | null): string => {
         if (num === null || isNaN(num)) return 'N/A';
