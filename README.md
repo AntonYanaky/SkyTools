@@ -1,11 +1,14 @@
-# Simple Tool For Quantifying Which Bits Shop Item Is Best To Buy
+# A Few Skyblock Tools
 
-A lightweight tool designed to help Hypixel SkyBlock players analyze and compare items from the Bits Shop to determine which purchases provide the best value and profit potential.
+Some tools for Hypixel Skyblock that I use whenever I play.
 
-## Features
+## Bits Flipper
 
 - Fetches real-time data from the Bazaar and Auction House.
 - Calculates prices and coins per bit for various bit shop items.
 - Displays sorted tables to highlight the most profitable bit flips.
 - Supports both Bazaar and Auction House items.
-- Responsive and easy to use interface with sorting and filtering.
+
+## Forge Flipper
+- Determines the items with the highest margin when crafting with the forge
+- Uses real-time data from the Bazaar and Auction House.
