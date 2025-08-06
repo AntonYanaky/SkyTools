@@ -536,9 +536,6 @@ export default function ForgeData() {
     const [auctionsData, setAuctionsData] = useState<Map<string, number>>(new Map());
     const [bazaarData, setBazaarData] = useState<ProcessedBazaarData>({});
     const [isLoading, setIsLoading] = useState<boolean>(true);
-    const [bazaarTaxRate, setTaxRate] = useState<number>(0.015); //my own value, this depends on account
-
-    setTaxRate(0.0125);
 
     const formatNumber = (num: number | null): string => {
         if (num === null || isNaN(num)) return 'N/A';
@@ -643,7 +640,7 @@ export default function ForgeData() {
         let salesTaxRate;
         let p = ((item.cost !== undefined && item.materialCost !== undefined) ? item.cost - item.materialCost : -Infinity);
         if (item.name.getIfBazaar()) {
-            return p - (item.cost ?? 0) * bazaarTaxRate;
+            return p - (item.cost ?? 0) * 0.0125;
         }
         if (!item.cost) {
             return null;
